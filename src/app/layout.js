@@ -7,7 +7,7 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children }) {
-  const resp = await fetch(`http://localhost:9090/items`, {cache:'no-cache'});
+  const resp = await fetch(`https://dramdiary-json-server.vercel.app/items`, {cache:'no-cache'});
   const items = await resp.json();
   return (
     <html>
