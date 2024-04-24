@@ -8,7 +8,7 @@ export default function Add() {
     evt.preventDefault();
     const title = evt.target.title.value;
     const content = evt.target.content.value;
-    const resp = await fetch('http://localhost:9090/items/', {
+    const resp = await fetch('https://dramdiary-json-server.vercel.app/items/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
